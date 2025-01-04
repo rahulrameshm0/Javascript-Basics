@@ -259,4 +259,28 @@ numbers.shift();
 numbers.pop();
 numbers.splice()
 document.write(numbers[0] + numbers[2])
+
+// STRINGS
+
+var a = "Java"
+var b = "Python, "
+var c = "Hello"
+document.write(a.charAt(2), "<br>")
+document.write(b.concat(a), "<br>") 
+document.write(c.toLowerCase(), "<br>")
+document.write(c.toUpperCase(), "<br>")
+document.write(b.slice(2,5), "<br>")
     
+// MATH OBJECT
+
+var a = 10;
+document.write(Math.sqrt(a), "<br>")
+document.write(Math.abs(a), "<br>")
+document.write(Math.min(5,10,56), "<br>")
+document.write(Math.max(5,10,56), "<br>")
+document.write(Math.pow(2,2), "<br>")
+document.write(Math.floor(55.4), "<br>")
+document.write(Math.ceil(55.5), "<br>")
+document.write(Math.random(a), "<br>")
+
+
