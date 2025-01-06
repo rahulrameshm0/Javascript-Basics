@@ -45,3 +45,57 @@ function create(){
 function remove(){
     heading.remove();
 }
+
+
+// DOM - Add Events
+
+var heading = document.getElementById("heads");
+var btn = document.getElementById("btn");
+
+btn.addEventListener("click",changeColor);
+btn.addEventListener("mouseover", changeBG)
+
+function changeColor(){
+    heading.style.color = "red";
+}
+
+function changeBG(){
+heading.style.backgroundColor = "blue";
+}
+
+// Object Oriented Programming
+
+// let employee = {
+//     name: "Rahul",
+//     age:25,
+//     position: "Python Developer",
+//     salary: 50000,
+
+//     getsalary:function(){
+//         document.write("Salary of ", this.name, " is ", this.salary, "<br>")
+//     }
+// }
+
+// employee.getsalary();
+
+// document.write(employee.age)
+
+// Creating Class
+
+class employees{
+    constructor(name,position,salary){
+        this.name = name,
+        this.position = position,
+        this.salary = salary
+    }
+
+    getsalarys(){
+        document.write("Salary of ", this.name, " is ", this.salary)
+    }
+}
+
+let e1 = new employees("Rahul","Python Devoloper", 25000);
+
+e1.getsalarys();
+
+
